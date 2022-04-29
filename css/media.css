@@ -586,6 +586,9 @@
 .item-billbord__image::before {
 	border-radius: 0;
 }
+.news {
+	padding-bottom: 40px;
+}
 }
 
 /* Custom, iPhone Retina */
