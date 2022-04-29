@@ -426,7 +426,7 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 .item-billbord__content {
-    padding: 25px 25px;
+    padding: 40px 25px;
     padding-right: 90px;
 }
 .title-big {
@@ -530,7 +530,7 @@
 	border-radius: 0;
 }
 .item-billbord__content {
-    padding: 25px 15px;
+    padding: 45px 15px;
     }
     .title-big {
     font-size: 19px;
