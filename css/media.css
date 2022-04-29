@@ -224,10 +224,10 @@
 		font-size: 16px;
 	}
 	.item-billbord .descr-big {
-		padding-bottom: 15px;
+		padding-bottom: 40px;
 	}
 	.item-billbord__image {
-		height: 286px;
+		height: 325px;
 	}
 	.slider-billbord .slick-dots {
 		bottom: 25px;
