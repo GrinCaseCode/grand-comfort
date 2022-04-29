@@ -355,6 +355,7 @@
 		background-color: #fff;
 		border-bottom: none;
 		    border-right: 1px solid #e7e7e7;
+		        border-top: 1px solid #e7e7e7 !important;
 		border-radius: 0 !important;
 	}
 	.btn-fixed__value {
@@ -387,6 +388,7 @@
 	}
 	.header {
 		transform: none !important;
+    border-bottom: 1px solid #e7e7e7;
 	}
 	.wrapper {
 		padding-top: 59px;
