@@ -512,6 +512,9 @@
 	align-items: center;
 	justify-content: center;
 }
+.brands .top-section {
+	padding-top: 0;
+}
 }
 
 /* Extra Small Devices, Phones */
@@ -556,9 +559,6 @@
 }
 .offer-block_big .offer-block__title {
     max-width: 185px;
-}
-.brands .top-section {
-	padding-top: 0;
 }
 .item-brand {
     height: 80px;
