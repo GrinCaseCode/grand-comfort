@@ -119,7 +119,7 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
     if ($(window).width() < 992) { 
       $(".footer__title").click(function() {
         $(this).toggleClass("active");
-        $(this).siblings(".footer__content").slideToggle(200);
+        $(this).next(".footer__content").slideToggle(200);
       });
 
 
