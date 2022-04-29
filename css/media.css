@@ -421,6 +421,9 @@
 	.menu-mobile .btn-user {
 		margin-bottom: 20px;
 	}
+	.row_catalog > div:nth-child(even) .item-catalog {
+		    border-right: 1px solid rgba(204,204,204,0.6);
+	}
 }
 
 /* Small Devices, Tablets */
