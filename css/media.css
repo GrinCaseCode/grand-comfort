@@ -505,6 +505,11 @@
 .item-catalog__title {
 	margin-bottom: 12px;
 }
+.checkbox-line {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 }
 
 /* Extra Small Devices, Phones */
