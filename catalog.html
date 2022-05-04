@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Заголовок</title>
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
+	<link rel="stylesheet" href="libs/fontawesome-free-5.12.0-web/css/all.min.css" />
+	<link rel="stylesheet" href="libs/ion.rangeSlider-master/css/ion.rangeSlider.min.css" />
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/main.css?ver=1.3" />
+	<link rel="stylesheet" href="css/media.css?ver=1.3" />
+</head>
+<body>
+
+	<div class="wrapper">
+
+		<div class="buttons-fixed">
+			<a href="#" class="btn-fixed"><img src="img/ic_bask.svg" alt="alt"><span class="btn-fixed__value">0</span></a>
+			<a href="#" class="btn-fixed"><img src="img/ic_heart.svg" alt="alt"><span class="btn-fixed__value">0</span></a>
+			<a href="#" class="btn-fixed"><img src="img/ic_chart.svg" alt="alt"><span class="btn-fixed__value">0</span></a>
+			<a href="#" class="btn-fixed btn-fixed_send"><img src="img/ic_send.svg" alt="alt"></a>
+			<a href="#" class="btn-fixed"><img src="img/ic_what.svg" alt="alt"></a>
+			<a href="#" class="btn-fixed"><img src="img/ic_email.svg" alt="alt"></a>
+		</div>
+
+		<header class="header">
+			<div class="container">
+				<div class="header-top">
+					<a href="#" class="btn-catalog">
+						<span class="menu-dots">
+							<span class="dot-menu"></span>
+							<span class="dot-menu"></span>
+							<span class="dot-menu"></span>
+							<span class="dot-menu"></span>
+							<span class="dot-menu"></span>
+							<span class="dot-menu"></span>
+							<span class="dot-menu"></span>
+							<span class="dot-menu"></span>
+							<span class="dot-menu"></span>
+						</span> 
+					</a>
+					<div class="logo-wrap">
+						<a href="#" class="logo">
+							<img src="img/logo.svg" alt="alt">
+						</a>
+						<div class="logo-descr">Магазин климатической техники</div>
+					</div>
+					<div class="location-header">
+						<div class="location-header__value">Севастополь <i class="far fa-chevron-down"></i></div>
+						<p>Индустриальная, 28, оф. 65</p>
+					</div>
+					<div class="contacts-header">
+						<a href="tel:+79789223028" class="phone-main">+7 (978) 922 30 28</a>
+						<a href="#callback" class="link-main fancybox">Заказать звонок</a>
+					</div>
+					<div class="search-form">
+						<form>
+							<input type="text" placeholder="Поиск" required="required">
+							<button class="btn-search"><i class="far fa-search"></i></button>
+						</form>
+					</div>
+					<a href="#" class="btn-user">
+						<span class="btn-user__icon">
+							<img src="img/user.svg" alt="alt">
+						</span>
+						<span>Войти</span>
+					</a>
+					<span class="btn_nav btn_nav-menu">
+						<span class="sandwich">
+							<span></span>
+							<span></span>
+							<span></span>
+						</span>
+					</span>
+				</div>
+				<ul class="menu">
+					<li class="menu__catalog"><a href="#">
+						<span class="menu-dots">
+							<span class="dot-menu"></span>
+							<span class="dot-menu"></span>
+							<span class="dot-menu"></span>
+							<span class="dot-menu"></span>
+							<span class="dot-menu"></span>
+							<span class="dot-menu"></span>
+							<span class="dot-menu"></span>
+							<span class="dot-menu"></span>
+							<span class="dot-menu"></span>
+						</span> 
+						<span>КАТАЛОГ</span>
+					</a></li>
+					<li><a href="#">Компания</a></li>
+					<li><a href="#">услуги</a></li>
+					<li><a href="#">Покупателям</a></li>
+					<li><a href="#">Бренды</a></li>
+					<li><a href="#">Статьи и новости</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="menu-mobile">
+				<div class="search-form">
+					<form>
+						<input type="text" placeholder="Поиск" required="required">
+						<button class="btn-search"><i class="far fa-search"></i></button>
+					</form>
+				</div>
+				<ul class="menu">
+					<li><a href="#">Компания</a></li>
+					<li><a href="#">услуги</a></li>
+					<li><a href="#">Покупателям</a></li>
+					<li><a href="#">Бренды</a></li>
+					<li><a href="#">Статьи и новости</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<a href="#" class="btn-user">
+					<span class="btn-user__icon">
+						<img src="img/user.svg" alt="alt">
+					</span>
+					<span>Войти</span>
+				</a>
+				<div class="location-header">
+					<div class="location-header__value">Севастополь <i class="far fa-chevron-down"></i></div>
+					<p>Индустриальная, 28, оф. 65</p>
+				</div>
+				<div class="contacts-header">
+					<a href="tel:+79789223028" class="phone-main">+7 (978) 922 30 28</a>
+					<a href="#callback" class="link-main fancybox">Заказать звонок</a>
+				</div>
+			</div>
+		</header>
+
+		<section class="catalog-page">
+			<div class="container">
+				<ul class="breadcrumbs">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Каталог</a></li>
+					<li>Сплит системы</li>
+				</ul>
+				<h1 class="title-page">Сплит системы</h1>
+				<div class="catalog-tags">
+					<a href="#" class="tag-catalog active">Сплит-системы 1051</a>
+					<a href="#" class="tag-catalog">Мульти сплит-системы 835</a>
+					<a href="#" class="tag-catalog">Кассетные кондиционеры 590</a>
+					<a href="#" class="tag-catalog">Канальные кондиционеры 534</a>
+				</div>
+				<div class="row">
+					<div class="col-lg-3">
+						<a href="#" class="btn-main btn-main_filter">Фильтр <i class="far fa-filter"></i></a>
+						<div class="sidebar-filter">
+							<div class="item-sidebar active">
+								<div class="item-sidebar__head">Бренд <i class="far fa-chevron-down"></i></div>
+								<div class="item-sidebar__content" style="display: block;">
+									<div class="checkbox checkbox_main">
+										<label>
+											<input type="checkbox" checked="checked" />
+											<span>AC Electric</span>
+										</label>
+									</div>
+									<div class="checkbox checkbox_main">
+										<label>
+											<input type="checkbox" />
+											<span>AERONIK</span>
+										</label>
+									</div>
+									<div class="checkbox checkbox_main">
+										<label>
+											<input type="checkbox" />
+											<span>AirGreen</span>
+										</label>
+									</div>
+									<div class="checkbox checkbox_main">
+										<label>
+											<input type="checkbox" />
+											<span>AUX</span>
+										</label>
+									</div>
+									<div class="checkbox checkbox_main">
+										<label>
+											<input type="checkbox" />
+											<span>BALLU</span>
+										</label>
+									</div>
+									<div class="checkbox checkbox_main">
+										<label>
+											<input type="checkbox" />
+											<span>Cooper & Hunter</span>
+										</label>
+									</div>
+									<div class="checkbox checkbox_main">
+										<label>
+											<input type="checkbox" />
+											<span>Dahatsu</span>
+										</label>
+									</div>
+									<div class="checkbox checkbox_main">
+										<label>
+											<input type="checkbox" />
+											<span>Daichi</span>
+										</label>
+									</div>
+									<div class="checkbox checkbox_main">
+										<label>
+											<input type="checkbox" />
+											<span>DAIKIN</span>
+										</label>
+									</div>
+									<div class="checkbox checkbox_main">
+										<label>
+											<input type="checkbox" />
+											<span>EcoClima</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="item-sidebar active">
+								<div class="item-sidebar__head">Цена (руб.) <i class="far fa-chevron-down"></i></div>
+								<div class="item-sidebar__content" style="display: block;">
+									<div class="range-catalog range-catalog_price">
+										<div class="range-controls">
+											<div class="input-range">
+												<input type="text" maxlength="4" value="24600" class="control-input control-input__from" />
+											</div>
+											<div class="input-range">
+												<input type="text" maxlength="4" value="993000" class="control-input control-input__to" />
+											</div>
+										</div>
+										<input type="text" class="range-catalog__input" name="my_range" value="" />
+									</div>
+								</div>
+							</div>
+							<div class="item-sidebar active">
+								<div class="item-sidebar__head">Тип компрессора <i class="far fa-chevron-down"></i></div>
+								<div class="item-sidebar__content" style="display: block;">
+									<div class="checkbox checkbox_main">
+										<label>
+											<input type="checkbox" checked="checked" />
+											<span>инвертор</span>
+										</label>
+									</div>
+									<div class="checkbox checkbox_main">
+										<label>
+											<input type="checkbox" />
+											<span>on/off</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="item-sidebar active">
+								<div class="item-sidebar__head">Производительность охлаждения, кВт <i class="far fa-chevron-down"></i></div>
+								<div class="item-sidebar__content" style="display: block;">
+									<div class="range-catalog range-catalog_price">
+										<div class="range-controls">
+											<div class="input-range">
+												<input type="text" maxlength="4" value="24600" class="control-input control-input__from" />
+											</div>
+											<div class="input-range">
+												<input type="text" maxlength="4" value="993000" class="control-input control-input__to" />
+											</div>
+										</div>
+										<input type="text" class="range-catalog__input" name="my_range" value="" />
+									</div>
+								</div>
+							</div>
+							<div class="buttons-sidebar">
+								<button class="btn-main">Применить</button>
+								<button class="btn-main btn-main_page">Очистить</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-9">
+						<div class="sorting-wrap">
+							<div class="item-sorting active">Новинки</div>
+							<div class="item-sorting">Цена</div>
+							<div class="item-sorting">Название</div>
+						</div>
+						<div class="row row_page">
+							<div class="col-lg-4 col-md-6">
+								<div class="item-catalog">
+									<ul class="list-status">
+										<li><div class="item-status item-status_new">Новинка</div></li>
+										<li><div class="item-status item-status_percent">-4%</div></li>
+									</ul>
+									<a href="#" class="item-catalog__image">
+										<img src="img/catalog1.jpg" alt="alt">
+									</a>
+									<a href="#" class="item-catalog__title">Кондиционер Haier Leader <br>DC AS12TL4 HRA Soft Clean</a>
+									<div class="line-feature">
+										<span>Площадь помещения:</span>
+										<span>25 м<sup>2</sup></span>
+									</div>
+									<div class="line-feature">
+										<span>Тип компрессора:</span>
+										<span>не инверторный</span>
+									</div>
+									<div class="line-feature">
+										<span>Охлаждение:</span>
+										<span>2,63 кВт</span>
+									</div>
+									<div class="prices-item">
+										<div class="price-old">38 170 руб.</div>
+										<div class="price-main">35 170 руб.</div>
+									</div>
+									<a href="#" class="btn-main">В корзину</a>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<div class="item-catalog">
+									<ul class="list-status">
+										<li><div class="item-status item-status_discount">Скидка</div></li>
+										<li><div class="item-status item-status_percent">-4%</div></li>
+									</ul>
+									<a href="#" class="item-catalog__image">
+										<img src="img/catalog1.jpg" alt="alt">
+									</a>
+									<a href="#" class="item-catalog__title">Кондиционер Haier Leader <br>DC AS12TL4 HRA Soft Clean</a>
+									<div class="line-feature">
+										<span>Площадь помещения:</span>
+										<span>25 м<sup>2</sup></span>
+									</div>
+									<div class="line-feature">
+										<span>Тип компрессора:</span>
+										<span>не инверторный</span>
+									</div>
+									<div class="line-feature">
+										<span>Охлаждение:</span>
+										<span>2,63 кВт</span>
+									</div>
+									<div class="prices-item">
+										<div class="price-old">38 170 руб.</div>
+										<div class="price-main">35 170 руб.</div>
+									</div>
+									<a href="#" class="btn-main">В корзину</a>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<div class="item-catalog">
+									<ul class="list-status">
+										<li><div class="item-status item-status_new">Новинка</div></li>
+										<li><div class="item-status item-status_percent">-4%</div></li>
+									</ul>
+									<a href="#" class="item-catalog__image">
+										<img src="img/catalog1.jpg" alt="alt">
+									</a>
+									<a href="#" class="item-catalog__title">Кондиционер Haier Leader <br>DC AS12TL4 HRA Soft Clean</a>
+									<div class="line-feature">
+										<span>Площадь помещения:</span>
+										<span>25 м<sup>2</sup></span>
+									</div>
+									<div class="line-feature">
+										<span>Тип компрессора:</span>
+										<span>не инверторный</span>
+									</div>
+									<div class="line-feature">
+										<span>Охлаждение:</span>
+										<span>2,63 кВт</span>
+									</div>
+									<div class="prices-item">
+										<div class="price-old">38 170 руб.</div>
+										<div class="price-main">35 170 руб.</div>
+									</div>
+									<a href="#" class="btn-main">В корзину</a>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<div class="item-catalog">
+									<ul class="list-status">
+										<li><div class="item-status item-status_discount">Скидка</div></li>
+									</ul>
+									<a href="#" class="item-catalog__image">
+										<img src="img/catalog1.jpg" alt="alt">
+									</a>
+									<a href="#" class="item-catalog__title">Кондиционер Haier Leader <br>DC AS12TL4 HRA Soft Clean</a>
+									<div class="line-feature">
+										<span>Площадь помещения:</span>
+										<span>25 м<sup>2</sup></span>
+									</div>
+									<div class="line-feature">
+										<span>Тип компрессора:</span>
+										<span>не инверторный</span>
+									</div>
+									<div class="line-feature">
+										<span>Охлаждение:</span>
+										<span>2,63 кВт</span>
+									</div>
+									<div class="prices-item">
+										<div class="price-old">38 170 руб.</div>
+										<div class="price-main">35 170 руб.</div>
+									</div>
+									<a href="#" class="btn-main">В корзину</a>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<div class="item-catalog">
+									<ul class="list-status">
+										<li><div class="item-status item-status_new">Новинка</div></li>
+										<li><div class="item-status item-status_percent">-4%</div></li>
+									</ul>
+									<a href="#" class="item-catalog__image">
+										<img src="img/catalog1.jpg" alt="alt">
+									</a>
+									<a href="#" class="item-catalog__title">Кондиционер Haier Leader <br>DC AS12TL4 HRA Soft Clean</a>
+									<div class="line-feature">
+										<span>Площадь помещения:</span>
+										<span>25 м<sup>2</sup></span>
+									</div>
+									<div class="line-feature">
+										<span>Тип компрессора:</span>
+										<span>не инверторный</span>
+									</div>
+									<div class="line-feature">
+										<span>Охлаждение:</span>
+										<span>2,63 кВт</span>
+									</div>
+									<div class="prices-item">
+										<div class="price-old">38 170 руб.</div>
+										<div class="price-main">35 170 руб.</div>
+									</div>
+									<a href="#" class="btn-main">В корзину</a>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<div class="item-catalog">
+									<ul class="list-status">
+										<li><div class="item-status item-status_discount">Скидка</div></li>
+										<li><div class="item-status item-status_percent">-4%</div></li>
+									</ul>
+									<a href="#" class="item-catalog__image">
+										<img src="img/catalog1.jpg" alt="alt">
+									</a>
+									<a href="#" class="item-catalog__title">Кондиционер Haier Leader <br>DC AS12TL4 HRA Soft Clean</a>
+									<div class="line-feature">
+										<span>Площадь помещения:</span>
+										<span>25 м<sup>2</sup></span>
+									</div>
+									<div class="line-feature">
+										<span>Тип компрессора:</span>
+										<span>не инверторный</span>
+									</div>
+									<div class="line-feature">
+										<span>Охлаждение:</span>
+										<span>2,63 кВт</span>
+									</div>
+									<div class="prices-item">
+										<div class="price-old">38 170 руб.</div>
+										<div class="price-main">35 170 руб.</div>
+									</div>
+									<a href="#" class="btn-main">В корзину</a>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<div class="item-catalog">
+									<ul class="list-status">
+										<li><div class="item-status item-status_new">Новинка</div></li>
+										<li><div class="item-status item-status_percent">-4%</div></li>
+									</ul>
+									<a href="#" class="item-catalog__image">
+										<img src="img/catalog1.jpg" alt="alt">
+									</a>
+									<a href="#" class="item-catalog__title">Кондиционер Haier Leader <br>DC AS12TL4 HRA Soft Clean</a>
+									<div class="line-feature">
+										<span>Площадь помещения:</span>
+										<span>25 м<sup>2</sup></span>
+									</div>
+									<div class="line-feature">
+										<span>Тип компрессора:</span>
+										<span>не инверторный</span>
+									</div>
+									<div class="line-feature">
+										<span>Охлаждение:</span>
+										<span>2,63 кВт</span>
+									</div>
+									<div class="prices-item">
+										<div class="price-old">38 170 руб.</div>
+										<div class="price-main">35 170 руб.</div>
+									</div>
+									<a href="#" class="btn-main">В корзину</a>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<div class="item-catalog">
+									<ul class="list-status">
+										<li><div class="item-status item-status_discount">Скидка</div></li>
+									</ul>
+									<a href="#" class="item-catalog__image">
+										<img src="img/catalog1.jpg" alt="alt">
+									</a>
+									<a href="#" class="item-catalog__title">Кондиционер Haier Leader <br>DC AS12TL4 HRA Soft Clean</a>
+									<div class="line-feature">
+										<span>Площадь помещения:</span>
+										<span>25 м<sup>2</sup></span>
+									</div>
+									<div class="line-feature">
+										<span>Тип компрессора:</span>
+										<span>не инверторный</span>
+									</div>
+									<div class="line-feature">
+										<span>Охлаждение:</span>
+										<span>2,63 кВт</span>
+									</div>
+									<div class="prices-item">
+										<div class="price-old">38 170 руб.</div>
+										<div class="price-main">35 170 руб.</div>
+									</div>
+									<a href="#" class="btn-main">В корзину</a>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<div class="item-catalog">
+									<ul class="list-status">
+										<li><div class="item-status item-status_new">Новинка</div></li>
+										<li><div class="item-status item-status_percent">-4%</div></li>
+									</ul>
+									<a href="#" class="item-catalog__image">
+										<img src="img/catalog1.jpg" alt="alt">
+									</a>
+									<a href="#" class="item-catalog__title">Кондиционер Haier Leader <br>DC AS12TL4 HRA Soft Clean</a>
+									<div class="line-feature">
+										<span>Площадь помещения:</span>
+										<span>25 м<sup>2</sup></span>
+									</div>
+									<div class="line-feature">
+										<span>Тип компрессора:</span>
+										<span>не инверторный</span>
+									</div>
+									<div class="line-feature">
+										<span>Охлаждение:</span>
+										<span>2,63 кВт</span>
+									</div>
+									<div class="prices-item">
+										<div class="price-old">38 170 руб.</div>
+										<div class="price-main">35 170 руб.</div>
+									</div>
+									<a href="#" class="btn-main">В корзину</a>
+								</div>
+							</div>
+						</div>
+						<div class="pager">
+							<a class="prev page-numbers disabled" href="#"><i class="fas fa-arrow-left"></i></a>
+							<div class="pager-numbers">
+								<span aria-current="page" class="page-numbers current" href="#">1</span>
+								<a class="page-numbers" href="#">2</a>
+								<a class="page-numbers" href="#">3</a>
+							</div>
+							<a class="next page-numbers" href="#"><i class="fas fa-arrow-right"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg">
+						<div class="footer__logo">
+							<a href="#" class="logo">
+								<img src="img/logo2.svg" alt="alt">
+							</a>
+							<div class="logo-descr">Магазин климатической техники</div>
+						</div>
+						<ul class="list-social">
+							<li><a href="#"><i class="fab fa-vk"></i></a></li>
+							<li><a href="#"><i class="fab fa-telegram-plane"></i></a></li>
+							<li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+						</ul>
+					</div>
+					<div class="col-lg">
+						<div class="footer__title">КАТАЛОГ <i class="far fa-chevron-down"></i></div>
+						<div class="footer__content">
+							<ul class="footer__nav">
+								<li><a href="#">Категория товаров #1</a></li>
+								<li><a href="#">Категория товаров #2</a></li>
+								<li><a href="#">Категория товаров #3</a></li>
+								<li><a href="#">Категория товаров #4</a></li>
+								<li><a href="#">Категория товаров #5</a></li>
+								<li><a href="#">Категория товаров #6</a></li>
+								<li><a href="#">Категория товаров #7</a></li>
+								<li><a href="#">Категория товаров #8</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg">
+						<div class="footer__title">КОМПАНИЯ <i class="far fa-chevron-down"></i></div>
+						<div class="footer__content">
+							<ul class="footer__nav">
+								<li><a href="#">О компании</a></li>
+								<li><a href="#">Сертификаты</a></li>
+								<li><a href="#">Партнёры</a></li>
+								<li><a href="#">Новости</a></li>
+							</ul>
+						</div>
+						<br>
+						<div class="footer__title">ПОКУПАТЕЛЯМ <i class="far fa-chevron-down"></i></div>
+						<div class="footer__content">
+							<ul class="footer__nav">
+								<li><a href="#">Оплата и доставка</a></li>
+								<li><a href="#">Возврат и обмен товара</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg">
+						<div class="footer__title">реквизиты <i class="far fa-chevron-down"></i></div>
+						<div class="footer__content">
+							<div class="requisites">
+								<p>ИНН/КПП 9102240086/910201001</p>
+								<p>ОГРН: 1189102000988</p>
+								<p>р/с 40702810642310002630</p>
+								<p>К/с № 30101810335100000607</p>
+								<p>РНКБ БАНК (ПАО) г. Симферополь</p>
+								<p>БИК № 043510607</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg">
+						<div class="footer__title">контакты <i class="far fa-chevron-down"></i></div>
+						<div class="footer__content">
+							<p><strong>Адрес</strong></p>
+							<p>Симферополь, ул. Киевская, 80</p>
+							<br>
+							<p><strong>Номер телефона</strong></p>
+							<p><a href="tel:+79892462209">+7 989 246-22-09</a></p>
+							<br>
+							<p><strong>Электронная почта</strong></p>
+							<p><a href="mailto:akimenko@dedietrich-service.ru">akimenko@dedietrich-service.ru</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3">
+							<a href="#">Политика конфиденциальности</a>
+						</div>
+						<div class="col-lg-3">
+							<p>г. Симферополь © Copyright 2022 г.</p>
+						</div>
+						<div class="col-lg-3">
+							<div class="create">Сделано в <img src="img/copy.svg" alt="alt"></div>
+						</div>
+						<div class="col-lg-3">
+							<a href="#" class="btn_top default"><i class="fa fa-arrow-up"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+<script src="libs/jquery/jquery-1.11.1.min.js"></script>
+<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+<script src="libs/slick-1.5.9/slick/slick.min.js"></script>
+<script src="libs/scroll2id/PageScroll2id.min.js"></script>
+<script src="libs/mask/jquery.maskedinput.js"></script>
+<script src="libs/ion.rangeSlider-master/js/ion.rangeSlider.min.js"></script>
+<script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
+<script src="js/common.js?ver=1.3"></script>
+<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>
