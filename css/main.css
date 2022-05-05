@@ -1741,7 +1741,7 @@ form {
 	color: #999999;
 	display: block;
 }
-.article img {
+.article__left img {
 	margin-bottom: 35px;
 	max-width: 100%;
 	height: auto;
@@ -1783,7 +1783,7 @@ form {
 .article blockquote p {
 	margin: 0;
 }
-.article img + p {
+.article__left img + p {
 	margin-top: 120px;
 }
 .article .item-news {

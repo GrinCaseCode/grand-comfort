@@ -98,7 +98,7 @@
 	.article__left {
 		padding-right: 15px;
 	}
-	.article img + p {
+	.article__left img + p {
 		margin-top: 90px;
 	}
 	.col-contact {
@@ -254,11 +254,11 @@
 		padding: 10px 16px;
 		margin-right: 9px;
 	}
-	.article img {
+	.article__left img {
 		float: none !important;
 		margin-right: 0 !important;
 	}
-	.article img + p {
+	.article__left img + p {
 		margin-top: 0;
 	}
 	.contacts-block {
@@ -872,7 +872,7 @@
 	.article time {
 		margin-bottom: 15px;
 	}
-	.article img {
+	.article__left img {
 		margin-bottom: 20px;
 	}
 	.article h2 {
