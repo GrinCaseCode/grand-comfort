@@ -650,7 +650,7 @@
 	.billbord {
 		padding-top: 13px;
 	}
-	.row_brands .col-page:last-child {
+	.row_brands .col-page:nth-child(10) {
 		display: none;
 	}
 	.item-billbord__image {
@@ -778,6 +778,9 @@
 }
 .row_brands {
 	padding-top: 40px;
+}
+.brands_page .row_brands .col-page:nth-child(10) {
+	display: block;
 }
 }
 
