@@ -76,6 +76,26 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 			$(".sandwich").removeClass("active");
 		});
 
+	$(".btn-catalog, .menu__catalog a").click(function(e) {
+		e.preventDefault();
+		$(".menu-mobile").slideUp(200);
+			$(".sandwich").removeClass("active");
+			if ($(".dropdown-catalog").is(":hidden")) {
+			$(".dropdown-catalog").slideDown(200);
+			$(this).addClass("active");
+		} else {
+			
+		}
+		});
+
+	 $(document).mouseup(function (e) {
+  var container = $(".dropdown-catalog");
+  if (container.has(e.target).length === 0 && $('.btn-catalog').has(e.target).length === 0){
+     $(".dropdown-catalog").slideUp(200);
+			$(".menu__catalog a, .btn-catalog").removeClass("active");
+  }
+});
+
 	//слайдер
 
 	$('.slider-billbord').slick({
@@ -183,6 +203,76 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	});
 
 
+	$('.slider-for').slick({
+		arrows: false,
+		dots: false,
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		asNavFor: '.slider-nav',
+		touchThreshold: 1000,
+		prevArrow: '<div class="slick-prev slick-arrow"><img src="img/prev.svg" alt="alt"><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><img src="img/next.svg" alt="alt"><div/>',
+
+	});
+
+	$('.slider-nav').slick({
+		arrows: false,
+		dots: false,
+		infinite: true,
+		vertical: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		asNavFor: '.slider-for',
+		touchThreshold: 1000,
+		focusOnSelect: true,
+		prevArrow: '<div class="slick-prev slick-arrow"><img src="img/prev.svg" alt="alt"><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><img src="img/next.svg" alt="alt"><div/>',
+				responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+			vertical: false
+			}
+		}
+		]
+	});
+
+	$('.for-modal').slick({
+		arrows: false,
+		dots: false,
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		asNavFor: '.nav-modal',
+		touchThreshold: 1000,
+		prevArrow: '<div class="slick-prev slick-arrow"><img src="img/prev.svg" alt="alt"><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><img src="img/next.svg" alt="alt"><div/>',
+
+	});
+
+	$('.nav-modal').slick({
+		arrows: false,
+		dots: false,
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		asNavFor: '.for-modal',
+		touchThreshold: 1000,
+		focusOnSelect: true,
+		prevArrow: '<div class="slick-prev slick-arrow"><img src="img/prev.svg" alt="alt"><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><img src="img/next.svg" alt="alt"><div/>',
+	});
+
+	$('.tabs li a').click(function(event) {
+		event.preventDefault();
+		$(this).parent().parent().find("li").removeClass('active');
+		$(this).parent().addClass('active');
+		$(".tab-pane").fadeOut(0);
+		var selectTab = $(this).attr("href");
+		$(selectTab).fadeIn(200);
+	}); 
+
 	$(".input-phone").mask("+7 (999) 999-99-99");
 
 
@@ -195,6 +285,48 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	//<a class="fancybox" data-fancybox-group="group"><img src="image.jpg" /></a>
 	$(".fancybox").fancybox();
 
+	$(".fancybox-card").fancybox({
+  beforeShow : function(){
+  	setTimeout(function () {
+      $('.for-modal').slick('setPosition');
+      $('.nav-modal').slick('setPosition');
+    }, 300); 
+    $(".fancybox-skin").addClass("modal-fancybox");
+    
+  }
+});
+
+jQuery('.quantity').each(function() {
+		var spinner = jQuery(this),
+		input = spinner.find('input[type="number"]'),
+		btnUp = spinner.find('.quantity-up'),
+		btnDown = spinner.find('.quantity-down'),
+		min = input.attr('min'),
+		max = input.attr('max');
+
+		btnUp.click(function() {
+			var oldValue = parseFloat(input.val());
+			if (oldValue >= max) {
+				var newVal = oldValue;
+			} else {
+				var newVal = oldValue + 1;
+			}
+			spinner.find("input").val(newVal);
+			spinner.find("input").trigger("change");
+		});
+
+		btnDown.click(function() {
+			var oldValue = parseFloat(input.val());
+			if (oldValue <= min) {
+				var newVal = oldValue;
+			} else {
+				var newVal = oldValue - 1;
+			}
+			spinner.find("input").val(newVal);
+			spinner.find("input").trigger("change");
+		});
+
+	});
 
 	//Кнопка "Наверх"
 	//Документация:

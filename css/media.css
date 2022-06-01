@@ -1,4 +1,10 @@
 /*==========  Desktop First Method  ==========*/
+@media only screen and (max-width : 1600px) {
+	.title-big {
+    font-size: 37px;
+    line-height: 46px;
+}
+	}
 @media only screen and (max-width : 1430px) {
 	.title-big {
 		font-size: 34px;
@@ -287,6 +293,14 @@
     font-size: 38px;
     line-height: 45px;
     margin-bottom: 21px;
+}
+
+
+.card-actions {
+	display: block;
+}
+.card-actions .card-prices {
+	margin-bottom: 20px;
 }
 }
 
@@ -588,6 +602,41 @@
     	padding: 40px;
     	padding-bottom: 0;
     }
+
+    .card-top {
+    	margin-bottom: 15px;
+    	margin-top: 25px;
+    }
+    .card-actions {
+    	display: flex;
+    }
+    .card-actions .card-prices{
+    	margin-bottom: 0;
+    }
+    .modal-main__right {
+    	padding-right: 15px;
+    }
+    .dropdown-catalog {
+    	left: 0;
+    	right: 0;
+    	padding: 20px 15px;
+    	padding-bottom: 70px;
+    	height: 100vh;
+    	background-color: #fff;
+    	overflow: auto;
+    }
+    .title-dropdown {
+    font-size: 21px;
+    line-height: 22px;
+    padding-bottom: 20px;
+}
+.dropdown-catalog ul {
+	padding-bottom: 10px;
+}
+.dropdown-catalog .row > div {
+	border: none;
+	padding: 0 15px !important;
+}
 }
 
 /* Small Devices, Tablets */
@@ -782,6 +831,42 @@
 .brands_page .row_brands .col-page:nth-child(10) {
 	display: block;
 }
+
+.col_for {
+	order: -1;
+}
+.slider-for__item {
+    height: 270px;
+    }
+    .card .title-page {
+    padding-bottom: 10px;
+    line-height: 35px;
+}
+.slider-nav {
+	max-width: 100%;
+}
+.slider-nav__item {
+	margin: 0 5px;
+}
+.card {
+	padding-bottom: 30px;
+}
+.modal-main {
+	padding: 40px 20px;
+}
+.for-modal__item {
+    height: 220px;
+    }
+    .nav-modal__item {
+    margin: 0 5px;
+    height: 74px;
+}
+.nav-modal {
+	margin: 0 -5px;
+}
+.nav-modal {
+	margin-top: 10px;
+}
 }
 
 /* Extra Small Devices, Phones */
@@ -941,6 +1026,46 @@
     line-height: 36px;
     margin-bottom: 15px;
 }
+
+.card .title-page {
+	font-size: 25px;
+}
+.slider-for__item {
+    height: 220px;
+}
+.slider-nav__item {
+	height: 73px;
+}
+.title-small {
+    font-size: 16px;
+    }
+    .card .line-feature {
+    margin-bottom: 10px;
+}
+.card-actions {
+	padding-top: 10px;
+}
+.card-actions .price-main {
+    font-size: 23px;
+}
+.modal-main {
+	padding: 30px 15px;
+}
+.nav-modal__item {
+	height: 58px;
+}
+.modal-main .title-modal {
+	font-size: 21px;
+	    padding-bottom: 20px;
+}
+.modal-actions {
+	display: block;
+}
+.modal-actions .btn-main {
+	width: 100%;
+	margin: 0;
+	margin-top: 20px;
+}
 }
 
 /* Custom, iPhone Retina */
@@ -984,7 +1109,7 @@
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1430px) {
 	.container {
-		max-width: 1430px;
+		max-width: 1380px;
 	}
 }
 @media (min-width: 1600px) {
