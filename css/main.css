@@ -2367,3 +2367,221 @@ display: none;
 .btn-catalog .menu-dots {
 	pointer-events: none;
 } 
+.compare-block {
+	padding: 20px 25px;
+	padding-top: 15px;
+	margin-right: 32px;
+	background-color: #f7f7f7;
+border-radius: 6px;
+}
+.row_compare {
+	margin: 0;
+}
+.row_compare > div {
+	padding: 0;
+}
+.row_compare .item-catalog {
+	border-top: none;
+}
+.row_compare > div:last-child .item-catalog {
+border-right: 1px solid rgba(204,204,204,0.6);
+}
+.btn-clear {
+	font-size: 14px;
+	color: #333;
+	font-family: 'AvenirNextCyr';
+	display: inline-flex;
+	align-items: center;
+	border: none;
+	background-color: transparent;
+	padding: 0;
+}
+.btn-clear i {
+	font-size: 25px;
+	margin-right: 20px;
+}
+.compare-block .btn-clear {
+	margin-top: 15px;
+	margin-left: 4px;
+}
+.compare {
+	padding-top: 32px;
+	padding-bottom: 60px;
+}
+.compare .title-page {
+	padding-bottom: 33px;
+}
+.table-main table {
+	line-height: 26px;
+	width: 100%;
+	border-spacing: 0;
+}
+.table-main table tr:nth-child(odd) td {
+	background-color: #f7f7f7;
+}
+.table-main table td {
+	padding: 13px 15px;
+}
+.table-main table td strong {
+	font-weight: 500;
+}
+.compare .table-main {
+	margin-top: 46px;
+}
+.page-navigation {
+	padding: 10px 0;
+	background-color: #17bfae;
+background-image: linear-gradient(0.0deg, #17bfae 0%, #009ddb 100%);
+border-radius: 6px;
+max-width: 400px;
+}
+.page-navigation a {
+	padding: 25px 40px;
+	font-size: 18px;
+line-height: 24px;
+font-weight: 500;
+border-bottom: 1px solid rgba(255,255,255,0.4);
+color: #ffffff;
+position: relative;
+	display: block;
+}
+.page-navigation li:last-child a {
+	border: none;
+}
+.page-navigation a::before {
+	position: absolute;
+	display: block;
+	content: " ";
+	width: 6px;
+height: 6px;
+top: 33px;
+left: 18px;
+background-color: #ffffff;
+border-radius: 50%;
+transition: all 0.3s;
+}
+.page-navigation a:hover::before,
+.page-navigation .active a::before {
+	background-color: #ff7c0c;
+}
+.billbord-service {
+	min-height: 240px;
+	padding: 60px 50px;
+	padding-right: 370px;
+	margin-bottom: 30px;
+	display: flex;
+	align-items: center;
+	background-color: #f7f7f7;
+	position: relative;
+	z-index: 1;
+}
+.billbord-service .title-page {
+	line-height: 40px;
+	padding-bottom: 0;
+}
+.billbord-service__image {
+	width: 514px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	z-index: -1;
+}
+.billbord-service__image img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	font-family: 'object-fit: cover;';
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.billbord-service__image::before {
+	position: absolute;
+	display: block;
+	content: " ";
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	 background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, #f7f7f7 100%);
+}
+.content-service {
+	margin-left: -45px;
+	font-size: 14px;
+line-height: 21px;
+}
+.content-service li,
+.content-service p {
+	margin-bottom: 10px;
+}
+.content-service li::before {
+	content: "•";
+	margin-right: 6px;
+}
+.service {
+	padding-bottom: 42px;
+}
+.prices-service {
+	padding-top: 33px;
+	padding-bottom: 20px;
+	background-color: #f7f7f7;
+}
+.prices-service__content {
+	margin-left: -45px;
+}
+.item-dropdown__head {
+	font-size: 20px;
+line-height: 21px;
+font-weight: 600;
+padding: 15px 0;
+padding-right: 15px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.item-dropdown__head i {
+	margin-left: 10px;
+	color: #055f90;
+	transition: all 0.3s;
+}
+.prices-block {
+	padding:20px 30px;
+	background-color: #ffffff;
+border-radius: 20px;
+}
+.table-page table {
+	width: 100%;
+	line-height: 20px;
+	border-spacing: 0;
+}
+.table-page table th {
+	background-color: #009ddb;
+	font-weight: 500;
+color: #ffffff;
+text-align: left;
+}
+.table-page table th,
+.table-page table td {
+	padding: 17px 30px;
+}
+.table-page table tr:nth-child(even) td {
+	background-color: rgba(0,157,219,0.05);
+}
+.item-dropdown__content {
+	padding: 15px 0;
+	display: none;
+}
+.consultation_service .consultation-block .descr-middle {
+    max-width: 545px;
+}
+.item-dropdown.active .item-dropdown__head i {
+	transform: rotate(45deg);
+}
+.btn-main_service {
+	display: none;
+}
+.btn-main_service i {
+	transition: all 0.3s;
+}
